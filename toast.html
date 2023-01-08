@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toast.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+        <div class="toast">
+            
+             <div class="toptoast">
+                <i class='bx bx-check' ></i>    
+                <div class="text">
+                       <h2>Sucsessfully</h2>
+                       <p>You Change has been saved</p>
+                    </div>
+             </div>
+
+                <i class="uil uil-multiply"></i>
+
+                <div class="progess"></div>
+        </div>
+        
+        <div class="button">
+            <button>Show toast</button>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    const x = document.querySelector(".button")
+    const y = document.querySelector(".progess")
+    const f = document.querySelector(".toast")
+    const w = document.querySelector(".uil-multiply")
+
+    x.addEventListener("click" , () => {
+        y.classList.toggle("active")
+        f.classList.toggle("atickvai")
+       
+        setTimeout(() => {
+            f.classList.remove("atickvai")
+            y.classList.remove("active")
+        }, 4500);
+
+    })
+
+    w.addEventListener("click" ,  () => {
+        f.classList.remove("atickvai")
+    })
+
+   
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;600;700&family=Roboto+Mono:wght@200;300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+    body{
+        display: flex;
+        height:100vh ;
+        background-color: rgb(97, 97, 96);
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+
+    .toast {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background-color: white;
+        padding: 1rem 1.5rem;
+        border-left:9px solid rgb(85, 1, 210);
+        border-radius: 17px ;
+        overflow: hidden;
+        /* display: none; */
+        box-shadow: 0 0px 0px rgb(129, 129, 129);
+        transform: translateX(calc(100% + 25px));
+        /* display: none; */
+        transition: all 0.5s cubic-bezier(0.68 , -0.55 , 0.265 , 1.35);
+        /* transition: all 0.5s; */
+    }
+
+    .text h2{
+        font-size: 21px;
+        font-weight: 600;
+        padding-bottom: 0.3rem;
+    }
+
+    .progess{
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       height: 4px;
+       width: 100%;
+       /* background: #5001aa; */
+    }
+    
+    @keyframes atick{
+        0%{
+            right: 0;
+        }
+
+        100%{
+            right: 100%;
+        }
+    }
+
+    .atickvai{
+        /* display: block; */
+        transform: translateX(0);
+        transition: all 0.6s cubic-bezier(0.68 , -0.55 , 0.265 , 1.35);
+
+        /* transition: all 2s ease; */
+    }
+
+    .active::before{
+        animation: atick 4.5s linear forwards;
+    }
+    
+    .progess::before{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color:#5100d4;
+        
+    }
+
+    .text p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .text{
+        margin-left: 1rem;
+
+    }
+
+    .toptoast{
+        display: flex;
+    }
+
+    .uil-multiply{
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        font-size: 20px;
+        opacity: 0.6;
+        font-weight: 800;
+    }
+
+    .uil-multiply:hover{
+        opacity: 1;
+    }
+
+
+
+
+/* 
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center; 
+   position: relative;
+}
+
+.toptoast{
+    right: 1rem;
+    white-space: none;
+    top: 25px;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.688);
+    border-left: 7px solid #6007e6; */
+    /* position: relative; */
+    /* top: 0; */
+    /* position: absolute;
+}
+
+.atick{
+    display: flex;
+}
+
+.atick .kicunai{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 98%;
+    background-color: #5001aa; */
+    
+    .toptoast .bx-check{
+        font-size: 40px;
+         color: #fcfcfc;
+        height: 40px;
+        width: 40px;
+        background-color: #5001aa;
+        border-radius: 50%;
+    
+        }
+    
+    
+    
+    .button button{
+        padding: 1rem 1.5rem;
+        font-size: 25px;
+        border-radius: 7px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        background-color: #440686;
+    }
+    /* margin-right: 28px; */
+    /* animation: atick 5.5s; */
+/* } */
+/* 
+@keyframes atick{
+  
+    0%{
+       width: 98%;
+    }
+    100%{
+     width:  0%;
+
+   }
+}
+
+.tow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toptoast h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+
+}
+
+.text{
+    margin-left: 1.2rem;
+    font-weight: 400;
+    font-weight: 300;
+    font-size: 18px;
+/* } */
